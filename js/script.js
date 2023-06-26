@@ -62,7 +62,7 @@ function getWeekDay(date){
 // getWeekDay();
 
 // Get Subscribers
-const youtubeKey = 'AIzaSyCDVa6CRvBlzX9o5Giss0GTl43RubVfXmE';
+const youtubeKey = 'YOUR KEY HERE';
 const youtubeUsername = 'UCJskGeByzRRSvmOyZOz61ig';
 const odometer = document.querySelector('.odometer');
 const delay = 1000; // 10 min
