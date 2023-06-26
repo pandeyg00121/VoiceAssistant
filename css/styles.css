@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: bisque;
+    background-image: url("../img/sf1.jpg");
+    background-size: cover;
+    color:  #fff;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    scroll-behavior: smooth; 
+}
+
+section {
+    position: relative;
+    padding: 1em;
+    width: 100vw;
+    height: 100vh;
+    font-size: 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template: "a"
+                   "b"
+                   "c";
+}
+
+#time {
+    grid-area: c;
+    justify-self: left;
+    align-self: end;
+    line-height: 0.7;
+    font-weight: 700;
+}
+
+#notifications {
+    grid-area: a;
+    justify-self: end;
+    font-size: 0.5em;
+}
+
+#demo {
+    grid-area: c;
+    justify-self: end;
+    align-self: end;
+    font-size: 0.5em;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+#subcount {
+    grid-area: b;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+#subcount #subcount__title {
+    font-size: 0.5em;
+}
+
+#subcount #subcount__number {
+    display: block;
+}
+
+#weather {
+    background-size: cover;
+}
+#wheaterstuff {
+    grid-area: b;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.testlink {
+    grid-area: a;
+    justify-content: start;
+    font-size: 0.5em;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
