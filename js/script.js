@@ -99,7 +99,7 @@ let weatherIcon = document.querySelector('.weather__icon');
 let weatherTitle = document.querySelector('.weather__title');
 
 function getWeather() {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=a8a66b0f9c8fb11e4c77fdadc202c4f6`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=YOUR KEY HERE`)
     .then(response => {
         return response.json()
     }) 
@@ -114,16 +114,12 @@ function getWeather() {
 }
 getWeather();
 
-//you key
-// AIzaSyCDVa6CRvBlzX9o5Giss0GTl43RubVfXmE
-//unsplashkey
-// jcoJKiVGfPx4M6nE6UWCvqIvQUZGb45T5F71qh_rVXk
 
 
 // Unsplash change weather photo based on weather
 let weatherWrapper = document.querySelector('#weather');
 function getWeatherPhoto(weather) {
-    let unsplashApi = 'https://api.unsplash.com/search/photos?client_id=jcoJKiVGfPx4M6nE6UWCvqIvQUZGb45T5F71qh_rVXk&page=1&per_page=1&query='+weather;
+    let unsplashApi = 'https://api.unsplash.com/search/photos?client_id=YOUR KEY HERE&page=1&per_page=1&query='+weather;
     fetch(unsplashApi)
     .then(response => {
         return response.json()
